@@ -1,0 +1,14 @@
+apiVersion: 1
+
+deleteDatasources:
+  - name: LokiProvisioning
+    orgId: 1
+
+datasources:
+  - name: LokiProvisioning
+    type: loki
+    access: proxy
+    orgId: 1
+    url: http://192.168.1.10:3100
+    editable: true
+    isDefault: true
